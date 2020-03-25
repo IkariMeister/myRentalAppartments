@@ -1,0 +1,16 @@
+tasks.register("prec") {
+    group = "git"
+    description = "Things that should be done before commit"
+
+}
+prec.dependsOn "check"
+prec.dependsOn "detekt"
+prec.dependsOn ktlintFormat
+
+tasks.register("prep") {
+    group = "git"
+    description = "Things that should be done before push"
+}
+
+prep.dependsOn "build"
+prep.dependsOn "test"

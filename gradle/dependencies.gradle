@@ -1,0 +1,5 @@
+ext {
+    detekt_version = '1.7.0'
+    kotlin_version = '1.3.71'
+    ktlint_version = '0.34.2'
+}
