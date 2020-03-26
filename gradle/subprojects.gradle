@@ -1,6 +1,7 @@
 subprojects {
-
     apply plugin: 'io.gitlab.arturbosch.detekt'
+    apply plugin: 'jacoco'
+    apply plugin: "com.vanniktech.android.junit.jacoco"
     apply from: "../gradle/ktlint.gradle"
 
     detekt {
@@ -31,6 +32,18 @@ subprojects {
             }
         }
     }
+    jacoco {
+        toolVersion = "0.8.5"
+        reportsDir = file("$buildDir/customJacocoReportDir")
+    }
+    junitJacoco {
+        jacocoVersion = "0.8.5" // type String
+        ignoreProjects = [] // type String array
+        excludes // type String List
+        includeNoLocationClasses = false // type boolean
+        includeInstrumentationCoverageInMergedReport = false // type boolean
+    }
+
 
     apply from: "../gradle/hooks.gradle"
 
