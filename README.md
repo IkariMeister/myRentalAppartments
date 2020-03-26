@@ -3,6 +3,7 @@
 [![License](https://img.shields.io/github/license/IkariMeister/myRentalAppartments.svg?style=flat-square)](LICENSE)
 [![ktlint](https://img.shields.io/badge/code%20style-%E2%9D%A4-FF4081.svg)](https://ktlint.github.io/)
 ![Android CI](https://github.com/IkariMeister/myRentalAppartments/workflows/Android%20CI/badge.svg)
+[![Build Status](https://travis-ci.com/IkariMeister/myRentalAppartments.svg?branch=master)](https://travis-ci.com/IkariMeister/myRentalAppartments)
 
 My Rental Appartments is an example App created inside [Architect Coders Program](https://architectcoders.com/)
 
