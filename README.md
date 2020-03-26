@@ -2,6 +2,7 @@
 
 [![License](https://img.shields.io/github/license/IkariMeister/myRentalAppartments.svg?style=flat-square)](LICENSE)
 [![ktlint](https://img.shields.io/badge/code%20style-%E2%9D%A4-FF4081.svg)](https://ktlint.github.io/)
+![Android CI](https://github.com/IkariMeister/myRentalAppartments/workflows/Android%20CI/badge.svg)
 
 My Rental Appartments is an example App created inside [Architect Coders Program](https://architectcoders.com/)
 
@@ -11,6 +12,7 @@ My Rental Appartments is an example App created inside [Architect Coders Program
 * [Objectives](#objectives-)
 * [How](#how-)
 * [GitHooks](#git-hooks-%EF%B8%8F)
+* [Templates](#templates-)
 
 
 ## Objectives 🎯
@@ -45,3 +47,7 @@ You can define what this task does modifying the `prep` task in the `gradle/hook
  
 In order to install this hook, just `cd doc/hooks` and run `./install-hooks.sh`.
 
+## Templates 📝
+
+There are some templates for *Pull Request* and *Issues* added on `.github`. Those templates are *mandatory* for issues and pull request.
+Those templates are based on [Karumi Quality Assurance Project](https://github.com/Karumi/project-quality-assurance)
