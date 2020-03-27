@@ -16,6 +16,7 @@ dependencies {
     debugImplementation "com.squareup.leakcanary:leakcanary-android:$leakcanary_version"
     api "com.google.dagger:dagger:$dagger_version"
     kapt "com.google.dagger:dagger-compiler:$dagger_version"
+    implementation "androidx.multidex:multidex:$multidex_version"
 
 //TESTS
     testImplementation "junit:junit:$junit_version"
@@ -29,7 +30,7 @@ dependencies {
     androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
     androidTestImplementation "androidx.test:runner:$espressorunner_version"
     androidTestImplementation "androidx.test:rules:$espressorunner_version"
-    androidTestImplementation "org.robolectric:robolectric:$roboelectric_version"
+    testImplementation "org.robolectric:robolectric:$roboelectric_version"
     androidTestImplementation("com.schibsted.spain:barista:$barista_version") {
         exclude group: 'org.jetbrains.kotlin' // Only if you already use Kotlin in your project
     }
