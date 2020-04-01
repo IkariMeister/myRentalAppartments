@@ -5,10 +5,10 @@ subprojects {
     detekt {
         toolVersion = "$detekt_version"
         parallel = false
-        config = files("$projectDir/config/detekt/config.yml")
+//        config = files("$projectDir/../config/detekt/config.yml")
         buildUponDefaultConfig = false
         // Interpret config files as updates to the default config. `false` by default.
-        baseline = file("$projectDir/config/detekt/baseline.xml")
+        baseline = file("$projectDir/../config/detekt/baseline.xml")
         // Specifying a baseline file. All findings stored in this file in subsequent runs of detekt.
         disableDefaultRuleSets = false
         // Disables all default detekt rulesets and will only run detekt with custom rules defined in plugins passed in with `detektPlugins` configuration. `false` by default.

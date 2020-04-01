@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/end_date_from"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_search"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/end_date_to"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/end_number_guests"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/date_from"
+        android:hint="@string/hint_dates"
+        android:labelFor="@id/date_from"
+        app:layout_constraintTop_toTopOf="@id/top" android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/middle" android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="@id/start" android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@id/end_date_from" android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:importantForAutofill="no"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/date_to"
+        android:hint="@string/hint_dates"
+        android:labelFor="@id/date_to"
+        app:layout_constraintTop_toTopOf="@id/top" android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/middle" android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toEndOf="@id/end_date_from" android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@id/end_date_to" android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+        android:importantForAutofill="no"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/number_guests"
+        android:hint="@string/number_guests"
+        android:labelFor="@id/number_guests"
+        app:layout_constraintTop_toTopOf="@id/top" android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/middle" android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toEndOf="@id/end_date_to" android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@id/end_number_guests" android:layout_marginEnd="16dp"
+        android:importantForAutofill="no"/>
+
+    <com.google.android.material.chip.Chip
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/search"
+        app:layout_constraintTop_toTopOf="@id/middle"
+        app:layout_constraintBottom_toBottomOf="@id/bottom" android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toEndOf="@id/start_search" android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="@id/end" android:layout_marginEnd="16dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:chipIconVisible="true"
+        android:textAlignment="center"
+        android:text="@android:string/search_go"
+        app:chipIcon="@android:drawable/ic_search_category_default"
+        style="@style/Widget.MaterialComponents.Chip.Action"
+        app:iconStartPadding="4dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

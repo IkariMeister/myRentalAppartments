@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">My Rental Appartments</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_dates">DD/MM/YYYY</string>
+    <string name="number_guests">N Guests</string>
 </resources>
