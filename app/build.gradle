@@ -49,6 +49,7 @@ android {
 
 dependencies {
 
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     apply from: "../gradle/dependencies.gradle"
     implementation "androidx.legacy:legacy-support-v4:$legacy_version"
     implementation "androidx.appcompat:appcompat:$appcompat_version"
