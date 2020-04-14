@@ -27,7 +27,7 @@
         app:layout_constraintGuide_percent="0.20"/>
     <androidx.constraintlayout.widget.Guideline
         android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:id="@+id/end"
+        android:id="@+id/bottom"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="1"/>
     <fragment
@@ -36,7 +36,7 @@
         android:id="@+id/seeker_area"
         app:layout_constraintTop_toTopOf="@id/start"
         app:layout_constraintBottom_toTopOf="@id/seeker_bottom"
-        app:layout_constraintEnd_toEndOf="@id/bottom"
+        app:layout_constraintEnd_toEndOf="@id/end"
         app:layout_constraintStart_toStartOf="@id/top"
         tools:layout="@layout/fragment_seeker"
     />
@@ -48,7 +48,7 @@
         app:layout_constraintTop_toTopOf="@+id/seeker_bottom"
         app:layout_constraintBottom_toTopOf="@+id/bottom"
         app:layout_constraintStart_toStartOf="@id/top"
-        app:layout_constraintEnd_toEndOf="@id/bottom"
+        app:layout_constraintEnd_toEndOf="@id/end"
         tools:listitem="@layout/accommodation_vh"
     />
 </androidx.constraintlayout.widget.ConstraintLayout>
