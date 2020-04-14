@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.fragment.AccommodationDetail"
-    android:id="@+id/frameLayout">
+    >
     <androidx.constraintlayout.widget.Guideline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,27 +28,44 @@
     <androidx.constraintlayout.widget.Guideline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/seeker_bottom"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/star_payment"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/bottom"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="1.0"/>
-    <com.google.android.material.chip.Chip
+        app:layout_constraintGuide_percent="1.0"
+    />
+    <fragment
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:chipIconVisible="true"
-        android:textAlignment="center"
-        android:text="@android:string/search_go"
-        app:chipIcon="@android:drawable/ic_search_category_default"
-        style="@style/Widget.MaterialComponents.Chip.Action"
-        android:id="@+id/credit_card"
+        android:name="com.ikarimeister.myrentalappartments.ui.fragment.Seeker"
+        android:id="@+id/seeker_area"
+        app:layout_constraintTop_toTopOf="@+id/top"
+        app:layout_constraintBottom_toTopOf="@+id/seeker_bottom"
+        app:layout_constraintEnd_toEndOf="@id/end"
+        app:layout_constraintStart_toStartOf="@id/start"
+        tools:layout="@layout/fragment_seeker"
     />
-    <com.google.android.material.chip.Chip
+    <fragment
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:chipIconVisible="true"
-        android:textAlignment="center"
-        android:text="@android:string/search_go"
-        app:chipIcon="@android:drawable/ic_search_category_default"
-        style="@style/Widget.MaterialComponents.Chip.Action"
-        android:id="@+id/paypal"
+        android:name="com.ikarimeister.myrentalappartments.ui.fragment.Seeker"
+        android:id="@+id/payment_area"
+        app:layout_constraintTop_toTopOf="@+id/star_payment"
+        app:layout_constraintBottom_toTopOf="@+id/bottom"
+        app:layout_constraintEnd_toEndOf="@id/end"
+        app:layout_constraintStart_toStartOf="@id/start"
+        tools:layout="@layout/payment_area"
     />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,4 +22,6 @@
     <string name="books">Books</string>
     <string name="promos">Promos</string>
     <string name="invite_a_friend">Invite a Friend</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="paypal">Paypal</string>
 </resources>
